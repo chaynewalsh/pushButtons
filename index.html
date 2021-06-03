@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Push Buttons</title>
+	</head>
+	<style>
+		
+		/* General Buttons */
+		#place_order {
+			width: 230px;
+			height: 40px;
+			background-color: #4eb5e5;
+			background: linear-gradient(to bottom, #4eb5e5 0%,#389ed5 100%); 
+			border: none;
+			border-radius: 5px;
+			position: relative;
+			border-bottom: 4px solid #2b8bc6;
+			color: #fbfbfb;
+			font-weight: 500;
+			font-family: 'Open Sans', sans-serif;
+			text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+			font-size: 20px;
+			text-align: left;
+			text-indent: 15px;
+			box-shadow: 0px 3px 0px 0px rgba(0,0,0,.2);
+			cursor: pointer;
+
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 20px;
+		}
+		#place_order:active {
+			box-shadow: 0px 2px 0px 0px rgba(0,0,0,.2);
+			top: 1px;
+		}
+		#place_order:after {
+			content: "";
+			width: 0;
+			height: 0;
+			display: block;
+			border-top: 20px solid #187dbc;
+			border-bottom: 20px solid #187dbc;
+			border-left: 16px solid transparent;
+			border-right: 20px solid #187dbc;
+			position: absolute;
+			opacity: 0.6; 
+			right: 0;
+			top: 0;
+			border-radius: 0 5px 5px 0;
+		}
+		#place_order:hover{
+			text-shadow: 0px 0px 0px rgba(0,0,0,.4);
+			-webkit-filter: drop-shadow(2px 2px 2px #656565);
+			filter: drop-shadow(2px 2px 2px #656565);
+		}
+	</style>
+
+	<body>
+
+			<div id="place_order">
+				<button id="place_order" class="place-order-button">Place Order</button>
+			</div>
+
+	</div>	
+	
+	
+	</body>
+</html>
